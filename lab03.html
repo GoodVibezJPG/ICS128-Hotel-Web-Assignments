@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="includes/css/"></link>-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="index.html">Kale Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="lab01.html">Lab 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="lab02.html">Lab 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="lab03.html">Lab 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab04.html">Lab 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab05.html">Lab 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab06.html">Lab 6</a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-warning">A Luxury Experience</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container d-flex justify-content-center align-items-center my-5" style="height: auto;">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-12 mb-5">
+                <div class="card text-center shadow">
+                    <div class="card-header bg-black text-warning h3">
+                        Part 1 - Exercise 1
+                    </div>
+                    <div class="card-body py-5">
+                        <h5 class="card-title"><label for="spaceInName">Find Spaces in a Name</label></h5>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" >👤</span>
+                            <input id="spaceInName" type="text" class="form-control" placeholder="Username" aria-label="Username">
+                        </div>
+                        <p>There are <span id="nameSpaceResult"></span> spaces in the clients name</p>
+                        <h5 class="card-title"><label for="letterInName">Find Letter in a Name</label></h5>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text">🔠</span>
+                            <input id="letterInName" type="text" class="form-control" placeholder="Username" aria-label="Username">
+                        </div>
+                        <p>There are <span id="nameLetterResult"></span> <span id="nameLetter"></span>'s in the clients name</p>
+                        <a id="findValueName" class="btn btn-dark mt-3">Calculate</a>
+                    </div>
+                    <div class="card-footer bg-dark text-warning">
+                        End of Exercise 1
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mb-5">
+                <div class="card text-center shadow">
+                    <div class="card-header bg-black text-warning h3">
+                        Part 1 - Exercise 2
+                    </div>
+                    <div class="card-body py-5">
+                        <h5 class="card-title"><label for="dateInput">Working With Time ⏰</label></h5>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text">📅</span>
+                            <input id="dateInput" type="date" class="form-control" placeholder="Username" aria-label="Username">
+                        </div>
+                        <p>Display your date here: <span id="currentDate"></span></p>
+                        <p>How many days in the month:  <span id="dayInMonth"></span></p>
+                        <p>How many working days in the month: <span id="workDaysInMonth"></span></p>
+                        <p>BC Minimum Wage:  <span id="minWageForYear"></span></p>
+                        <p>8 Hour working Salary for month:  <span id="salaryForMonth"></span></p>
+                        <a id="calculateDays" class="btn btn-dark">Calculate</a>
+                    </div>
+                    <div class="card-footer bg-black text-warning">
+                        End of Exercise 2
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card text-center shadow">
+                    <div class="card-header bg-black text-warning h3">
+                        Part 2 - Exercise 3
+                    </div>
+                    <div class="card-body py-5">
+                        <h5 class="card-title"><label for="numInput">Error Handling 🔢</label></h5>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text">✅❎</span>
+                            <input id="numInput" type="text" class="form-control" placeholder="Number..." aria-label="Number...">
+                        </div>
+                        <p>Your number value is: <span id="numValue" class="fw-bold"></span></p>
+                        <p><span id="numGreaterThan"></span><span id="numResult"></span></p>
+                        <p><span id="rangeValidation"></span></p>
+                        <a id="calculateGreaterThan" class="btn btn-dark">Calculate</a>
+                    </div>
+                    <div class="card-footer bg-black text-warning">
+                        End of Exercise 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <span class="mb-3 mb-md-0 text-warning">© 2025 Kale Hospitality, Inc</span>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="includes/js/lab03.js"></script>
+</body>
+</html>

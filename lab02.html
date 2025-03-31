@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Lab 02</title>
+</head>
+<bodykkkkkkkk>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="index.html">Kale Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="lab01.html">Lab 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="lab02.html">Lab 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab03.html">Lab 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab04.html">Lab 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab05.html">Lab 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lab06.html">Lab 6</a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-warning">A Luxury Experience</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container d-flex justify-content-center align-items-center" style="height: 88vh">
+        <div class="row d-flex justify-content-center m-5">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">3 Prices for rooms?</h5>
+                        <p class="card-text">3 prices are: <span id="roomPrices"></span></p>
+                        <p class="card-text">Middle: <span id="medianRoomCost"></span></p>
+                        <p class="card-text">Mean: <span id="meanRoomCost"></span></p>
+                        <button id="calculateRoomPrices" class="btn btn-dark text">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><label for="FullPercentage">Display How Full the Hotel Is:</label></h5>
+                        <input type="text" id="FullPercentage" placeholder="% full?"></input>
+                        <p class="card-text">The Hotel is:</p>
+                        <!--Span for Percentage number, while keeping result text default.-->
+                        <h4 class="card-text fw-heavy"><span id="OccupancyNumber"></span> <span id="OccupancyText"></span></h4>
+                        <button id="calculateHotelOccupancy" class="btn btn-dark text">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><label for="iterationValue">Iteration</label></h5>
+                        <input type="text" id="iterationValue" placeholder="Enter Value"></input>
+                        <p id="iterationText" class="card-text"></p>
+                        <button id="calculateIteration" class="btn btn-dark text">Iterate me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Who gets there the fastest? 🏁</h5>
+                        <label for="alexaSpeed">Alexa's Speed: </label><input type="text" id="alexaSpeed" placeholder="Enter Value"></input>
+                        <br>
+                        <label for="siriSpeed">Siri's Speed: </label><input type="text" id="siriSpeed" placeholder="Enter Value"></input>
+                        <br>
+                        <br>
+                        <p class="card-text">Alexa's Speed is: <span id="alexaMaxSpeed"></span></p>
+                        <p class="card-text">Siri's Speed is: <span id="siriMaxSpeed"></span></p>
+                        <br>
+                        <!--Span to setup color for Winner, while keeping result text default.-->
+                        <h4><span id="raceWinner"></span><span id="raceResult"></span></h4>
+                        <button id="calculateFastest" class="btn btn-dark text mt-2">Who's Fastest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <span class="mb-3 mb-md-0 text-warning">© 2025 Kale Hospitality, Inc</span>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="includes/js/lab02.js"></script>
+</bodykkkkkkkk>
+</html>

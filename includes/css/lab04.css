@@ -1,0 +1,19 @@
+.caret-right {
+    list-style-image: url(../images/lab04/caret-right.svg);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.card {
+    animation: fadeIn 2.5s ease-in-out;
+}
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
+.card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
